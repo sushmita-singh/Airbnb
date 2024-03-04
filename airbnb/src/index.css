@@ -25,7 +25,7 @@ a:hover {
 }
 
 body {
-  margin: 1em;
+  margin: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.1;
 }
 
@@ -82,10 +82,10 @@ button:focus-visible {
 .section-images {
   display: flex;
   gap: 1.4em;
-  height: 30%;
+  height: 300px;
   justify-content: center;
   align-items: center;
-  padding: 3em;
+  padding: 1em;
 }
 
 .section {
@@ -112,7 +112,7 @@ button:focus-visible {
 }
 
 .image {
-  width: 80px;
+  width: 70px;
 }
 
 /* Main components */
@@ -139,7 +139,7 @@ button:focus-visible {
 .slider {
   display: flex;
   gap: 1em;
-  margin-top: 3em;
+  margin-top: 2em;
   padding: 0 1em;
 }
 
@@ -150,8 +150,8 @@ button:focus-visible {
 }
 
 .slider-image {
-  width: 250px;
-  height: 325px;
+  width: 220px;
+  height: 290px;
   border-radius: 14px;
 
 }
