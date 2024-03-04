@@ -1,7 +1,14 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
+  --font-color-primary: #222222;
+  --font-color-light: #918E9B;
+  --font-color-ascent: #FE395C;
+  --font-color-headings: #000000;
+
+  --btn-bg-color: #FFFFFF;
 }
 
 a {
@@ -18,7 +25,7 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 1em;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -50,11 +57,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Main components */
+/* Navbar components */
 
 #root {
   width: 800px;
   height: 100vh;
+  box-shadow: 1px 1px 10px #adb5bd;
 }
 
 .navbar {
@@ -67,4 +75,136 @@ button:focus-visible {
 
 .logo {
   width: 120px;
+}
+
+/* Images */
+
+.section-images {
+  display: flex;
+  gap: 1.4em;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+.section {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section-one, .section-five {
+  justify-content: center;
+}
+
+.section-two, .section-four {
+  justify-content: flex-start;
+}
+
+.section-two {
+  padding-top: 1em;
+}
+
+.section-three {
+  justify-content: flex-end;
+}
+
+.image {
+  width: 80px;
+}
+
+/* Main components */
+
+.main {
+  width: 80%;
+  padding: 0 1em;
+}
+
+.header {
+  font-weight: 600;
+  color: var(--font-color-headings);
+  margin-bottom: 0.25em;
+}
+
+.desc {
+  font-weight: 300;
+  color: var(--font-color-primary);
+  margin-top: 0;
+}
+
+/* Slider */
+
+.slider {
+  display: flex;
+  gap: 1em;
+  margin-top: 3em;
+  padding: 0 1em;
+}
+
+.slider-element {
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 250px;
+  height: 325px;
+  border-radius: 14px;
+
+}
+
+.btn {
+  width: 70px;
+  height: 23px;
+  padding: 0.25em;
+
+  background-color: var(--btn-bg-color);
+  color: var(--font-color-primary);
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.80rem;
+
+  border-radius: 0;
+  border: none;
+
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+
+.ratings-section {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0;
+}
+
+.star {
+  width: 14px;
+}
+
+.light {
+  color: var(--font-color-light);
+}
+
+.slider-heading {
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--font-color-primary);
+  margin: 0;
+}
+
+.rate {
+  font-size: 0.9rem;
+  margin-top: 0.5em;
+}
+
+.bold {
+  font-weight: 700;
 }
