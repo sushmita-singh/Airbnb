@@ -12,8 +12,7 @@ export default function Card(props) {
     return (
         <div className="slider-element">
             <div className="slider-image-section">                    
-                {props.item.openSpots === 0 && <button className="btn">{badgeText}</button>}
-                {props.item.location === "Online" && <button className="btn">{badgeText}</button>}
+            {badgeText && <div className="btn">{badgeText}</div>}
                 <img src={`../images/${props.item.coverImg}`} alt="slider-image" className="slider-image"/>
             </div>
             <div className="slider-desc"> 

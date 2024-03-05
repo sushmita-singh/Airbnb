@@ -4,11 +4,11 @@ import data from "../data";
 
 export default function Slider() {
 
+    const cardData = data.map((item) => <Card key={item.id} item = {item} />)
+
     return (
         <div className="slider">
-            <Card item = {data[0]} />
-            <Card item = {data[1]}  />
-            <Card item = {data[2]}  />
+            {cardData}
         </div>
     )
 }
